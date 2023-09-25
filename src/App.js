@@ -1,16 +1,24 @@
 import './App.css';
+//import Counter from './Counter.js'
 import ListView from './ListView';
-import Greetings from './Greetings.js'
+import Greetings from './Greetings.js';
+import SignUpForm from './SignUpForm';
+import Parent from './Day2.js';
 function App() {
-  const list=[1,2,3,4,5,6,7,8,9,10];
   return (
-    <div>
     <div className="App">
-    <Greetings name="Amrutha"/>
-    </div>
-    <div className="App">
-      <ListView list={list}/>
-        </div>
+      <div>
+        <Greetings name="Amrutha"/>
+      </div>
+      <div>
+        <ListView start={5} end={15}/>
+      </div>
+      <div>
+        <SignUpForm/>
+      </div>
+      <div>
+        <Parent/>
+      </div>
     </div>
   );
 }
