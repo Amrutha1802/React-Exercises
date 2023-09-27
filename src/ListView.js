@@ -1,13 +1,16 @@
+import './App.css';
 function ListView({start=1,end=10}){
     const list=[];
     for(let i=start;i<end;i++){
         list.push(i);
     }
     return(
-    <ul>
-        {list.map(listItem=>
-        <li key={listItem}>{listItem}</li>)}
-    </ul>
+        <div className="App">
+            <ul style={{listStyleType:'none'}}>
+                {list.map(listItem=>
+                <li key={listItem}>{listItem}</li>)}
+            </ul>
+        </div>
     );
 }
 export default ListView;

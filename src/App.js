@@ -1,9 +1,8 @@
 import './App.css';
-//import Counter from './Counter.js'
 import ListView from './ListView';
 import Greetings from './Greetings.js';
-import SignUpForm from './SignUpForm';
-import Parent from './Day2.js';
+import Counter from './Counter.js'
+import SignUpFormUsingSwitch from './Day-5.js';
 function App() {
   return (
     <div className="App">
@@ -14,10 +13,10 @@ function App() {
         <ListView start={5} end={15}/>
       </div>
       <div>
-        <SignUpForm/>
+        <Counter/>
       </div>
       <div>
-        <Parent/>
+        <SignUpFormUsingSwitch/>
       </div>
     </div>
   );

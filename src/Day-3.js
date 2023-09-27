@@ -11,11 +11,11 @@ import React, { useState } from 'react';
 function Counter({ defaultValue = 0 }) {
   const [count, setCount] = useState(defaultValue);
 
-  const increment = () => {
+  function increment(){
     setCount(count + 1);
   };
 
-  const decrement = () => {
+  function decrement() {
     setCount(count - 1);
   };
 
