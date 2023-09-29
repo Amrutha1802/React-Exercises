@@ -4,7 +4,7 @@
 // 2. Lift the state from all above components to a component called Parent.
 //    - Call <Parent /> in App and all state should be managed in Parent
 //    - state updaters should be sent as props to children and should be updated from children.
-import './App.css';
+import '../App.css';
 import React, { useState } from 'react';
 export default function Parent(){
     const [formData, setFormData] = useState({

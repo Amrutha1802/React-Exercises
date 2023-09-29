@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 function ListView({start=1,end=10}){
     const list=[];
     for(let i=start;i<end;i++){

@@ -1,6 +1,9 @@
-import './App.css';
+import '../App.css';
 import React from 'react';
-function Greetings({name}){
+import { useParams } from 'react-router-dom'
+function Greetings(){
+  const params=useParams();
+  const username =params.username ===':username'?'User':params.username;
   function getTime()
   {
     const now = new Date();
@@ -18,6 +21,6 @@ function Greetings({name}){
     }
   }
   const time=getTime();
-  return <h1>Hello {name} , Good {time}</h1>;
+  return <h1>Hello {username} , Good {time}</h1>;
 }
 export default Greetings;
