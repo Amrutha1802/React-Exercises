@@ -7,7 +7,7 @@ import Navbar from './components/Navbar.js'
 import DisplayJokes from './components/Day-6.js'
 import { QueryClientProvider } from 'react-query';
 import { QueryClient } from 'react-query';
-import PostUsingMutation from './components/UseAddActivity';
+import PostUsingMutation from './components/AddDataUsingMutation';
 
 const queryClient=new QueryClient();
 function App() {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useMutation, useQueryClient } from 'react-query';
+import { useMutation } from 'react-query';
 import axios from 'axios';
 
 export default function PostUsingMutation(){
@@ -7,7 +7,6 @@ export default function PostUsingMutation(){
         title: '',
         body: '',
       });
-      const queryClient = useQueryClient();
       const handleAddData = () => {
         addDataMutation.mutate(newData);
       };
@@ -15,7 +14,6 @@ export default function PostUsingMutation(){
         (newData) => axios.post('https://jsonplaceholder.typicode.com/posts', newData),
         {
           onSuccess: () => {
-            queryClient.invalidateQueries('posts');
             console.log('Data added successfully!');
             setNewData({
               title: '',
